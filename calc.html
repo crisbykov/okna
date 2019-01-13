@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Наши окна</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <section class="section">
+        <div class="container">
+            <p class="h1 text-center">Калькулятор расчета стоимости окна</p>
+            <div class="small-line"></div>
+            <div class="row price">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="list-group calculator">
+                        <div class="list-group-item box-price">
+                            <div class="box-filter" data-price="0.006">
+                                <div class="form-group">
+                                    <label>Высота и ширина окна</label>
+                                    <div class="row">
+                                        <div class="col-md-4" style="padding-top: 14px;">Высота окна:</div>
+                                        <div class="col-md-3"><input type="text" name="roof" class="form-control" id="height" value="" placeholder="0"></div>
+                                        <div class="col-md-4" style="padding-top: 25px;">Ширина окна:</div>
+                                        <div class="col-md-3"><input type="text" name="roof" class="form-control" id="width" value="" placeholder="0"></div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Тип дома</label>
+                                    <ul class="parametrs" id="typeHome">
+                                        <li class="label label-default" data-param="1.1">Панельный</li>
+                                        <li class="label label-default" data-param="1.15">Кирпичный</li>
+                                        <li class="label label-default" data-param="1.25">Сталинский</li>
+                                    </ul>
+                                </div>
+                                <div class="form-group">
+                                    <label>Стеклопакет</label>
+                                    <ul class="parametrs" id="Glass">
+                                        <li class="label label-default" data-param="1">Однокамерный</li>
+                                        <li class="label label-default" data-param="1.2">2-камерный</li>
+                                    </ul>
+                                </div>
+                                <div class="form-group">
+                                    <label>Дополнительно</label>
+                                    <ul class="parametrs" id="potolok">
+                                        <li class="label label-default" data-param="1">Демонтаж</li>
+                                        <li class="label label-default" data-param="0.95">Отлив</li>
+                                        <li class="label label-default" data-param="1.15">Подоконник</li>
+                                        <li class="label label-default" data-param="1.2">Москитная сетка</li>
+                                        <li class="label label-default" data-param="1">Монтаж окна</li>
+                                    </ul>
+                                </div>
+                            </div><!-- /.box-filter -->
+                        </div>
+                        <div class="list-group-item footer-price">
+                            <button type="button" class="btn-outlined btn-lg btn-default price-button">Рассчитать стоимость</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    </body>
+</html>
